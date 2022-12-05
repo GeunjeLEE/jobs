@@ -1,0 +1,13 @@
+tasks:
+  - name: List Domain
+    id: list_domain
+    uses: "@modules/resource"
+    spec:
+      resource_type: identity.Domain
+      data:
+        query:
+          only:
+          - domain_id
+      mode: EXEC
+      verb:
+        exec: list
